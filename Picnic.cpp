@@ -5,7 +5,7 @@ using namespace std;
 
 int check[10];		//짝을 지었는지 확인
 int f[10][10];		//배열을 이용하여 친구끼리 묶기
-int num;			//학생 수
+int num;		//학생 수
 
 int solution(void)
 {
@@ -20,7 +20,7 @@ int solution(void)
 		}
 	}
 
-	if (first == -1) return 1;					//학생의 짝을 다 찾았으면 1로 반환
+	if (first == -1) return 1;				//학생의 짝을 다 찾았으면 1로 반환
 
 	int result = 0;
 
