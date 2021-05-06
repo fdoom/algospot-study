@@ -15,8 +15,8 @@ public:
 	{
 		unsigned int result[4];
 
-		result[3] = temp & arr[3];
-		result[3] = result[3] << 24;
+		result[3] = temp & arr[3];              //mask 연산 후
+		result[3] = result[3] << 24;            //변환 위치로 이동
 
 		result[2] = temp & arr[2];
 		result[2] = result[2] << 8;
@@ -28,7 +28,7 @@ public:
 		result[0] = result[0] >> 24;
 
 		temp = 0;
-		for (int i = 0; i < 4; i++)		//선택적 선택 연산 OR
+		for (int i = 0; i < 4; i++)		//선택적 세트 연산 OR
 			temp |= result[i];
 
 		return temp;
