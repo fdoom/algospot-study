@@ -33,8 +33,8 @@ int main(void)
 			n *= 3.7854;
 			unit = "l";
 		}
-		cout << fixed;
-		cout.precision(4);
+		cout << fixed;			//소수점이하 수 출력
+		cout.precision(4);		//4자리까지
 		cout << pk << " " << n << " " << unit << endl;
 	}
 }
